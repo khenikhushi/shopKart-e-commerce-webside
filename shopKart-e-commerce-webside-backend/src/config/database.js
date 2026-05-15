@@ -2,19 +2,29 @@ const { Sequelize } = require('sequelize');
 const env = require('./env');
 const logger = require('../utils/logger.util');
 
+const isProd = env.app.nodeEnv === 'production';
+const dbConfig = isProd ? env.live.db : env.db;
+
 const sequelize = new Sequelize(
-  env.db.name,
-  env.db.user,
-  env.db.password,
+  dbConfig.name,
+  dbConfig.user,
+  dbConfig.password,
   {
-    host: env.db.host,
-    port: env.db.port,
+    host: dbConfig.host,
+    port: dbConfig.port,
     dialect: 'mysql',
     logging: (msg) => {
       if (env.app.nodeEnv === 'development') {
         logger.debug(msg);
       }
     },
+    // SSL is mandatory for Aiven cloud connections
+    dialectOptions: isProd ? {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false
+      }
+    } : {},
     pool: {
       max: 10,
       min: 0,
@@ -32,7 +42,7 @@ const sequelize = new Sequelize(
 
 const dbConnectionState = {
   connected: false,
-  activePort: env.db.port,
+  activePort: dbConfig.port,
   lastAttemptAt: null,
   lastConnectedAt: null,
   lastError: null,
@@ -78,7 +88,7 @@ const formatDbError = (error) => {
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 const connectDB = async () => {
-  const primaryPort = env.db.port;
+  const primaryPort = isProd ? env.live.db.port : env.db.port;  
   const retryCount = parseInt(process.env.DB_CONNECT_RETRIES || '2', 10);
   const retryDelayMs = parseInt(
     process.env.DB_CONNECT_RETRY_DELAY_MS || '1500',

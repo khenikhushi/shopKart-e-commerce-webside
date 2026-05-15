@@ -13,6 +13,7 @@ const startServer = async () => {
   app.listen(env.app.port, () => {
     logger.info(`Server running on port ${env.app.port}`);
     logger.info(`Environment: ${env.app.nodeEnv}`);
+    
   });
 
   const connectWithBackgroundRetry = async () => {

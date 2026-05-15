@@ -31,11 +31,16 @@ module.exports = {
     dialect: 'mysql',
   },
   production: {
-    username: env.db.user,
-    password: env.db.password,
-    database: env.db.name,
-    host: env.db.host,
-    port: env.db.port,
+    host: env.live.db.host,
+    port: env.live.db.port,
+    username: env.live.db.user,
+    password: env.live.db.password,
+    database: env.live.db.name,
     dialect: 'mysql',
+    dialectOptions: {
+      ssl: {
+        rejectUnauthorized: false
+      }
+    },
   },
 };

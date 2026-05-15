@@ -7,6 +7,11 @@ const requiredEnvVars = [
   'DB_PORT',
   'DB_NAME',
   'DB_USER',
+  'LIVE_DB_HOST',
+  'LIVE_DB_PORT',
+  'LIVE_DB_NAME',
+  'LIVE_DB_USER',
+  'LIVE_DB_PASSWORD',
   'JWT_SECRET',
   'JWT_EXPIRES_IN',
   'BCRYPT_SALT_ROUNDS',
@@ -50,6 +55,15 @@ module.exports = {
     name: process.env.DB_NAME,
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
+  },
+  live: {
+    db: {
+      host: process.env.LIVE_DB_HOST,
+      port: process.env.LIVE_DB_PORT,
+      name: process.env.LIVE_DB_NAME,
+      user: process.env.LIVE_DB_USER,
+      password: process.env.LIVE_DB_PASSWORD,
+    }
   },
   jwt: {
     secret: process.env.JWT_SECRET,
