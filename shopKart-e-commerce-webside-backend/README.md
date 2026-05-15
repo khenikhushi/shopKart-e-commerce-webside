@@ -1,12 +1,12 @@
-# ecommerce-backend
+# shopkart-e-commerce-webside-backend
 
-Backend for the ecommerce project (Express + Sequelize).
+Backend for the shopkart-e-commerce-webside project (Express + Sequelize).
 
 See the consolidated project docs: `../docs/README.md` and `../docs/archive/API_PROFESSIONAL_GUIDE.md` for API reference, installation, and security notes.
 
 Quick start
 ```bash
-cd ecommerce-backend
+cd shopkart-e-commerce-webside-backend
 npm install
 cp .env.example .env
 npm run dev
@@ -35,7 +35,7 @@ Production-grade REST API built with Node.js, Express, Sequelize, and MySQL.
 ### 1. Clone and install
 \`\`\`bash
 git clone <repo-url>
-cd ecommerce-api
+cd shopkart-e-commerce-webside-api
 npm install
 \`\`\`
 

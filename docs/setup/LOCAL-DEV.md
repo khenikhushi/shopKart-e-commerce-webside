@@ -7,7 +7,7 @@ Backend
 1. Install dependencies
 
 ```bash
-cd ecommerce-backend
+cd shopkart-e-commerce-webside-backend
 npm install
 ```
 
@@ -28,7 +28,7 @@ npm run dev
 Frontend
 
 ```bash
-cd ecommerce-frontend
+cd shopkart-e-commerce-webside-frontend
 npm install
 npm run dev
 ```

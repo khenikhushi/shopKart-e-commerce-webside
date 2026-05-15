@@ -1,14 +1,14 @@
 {
-  "name": "ecommerce",
+  "name": "shopkart-e-commerce-webside",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "npx concurrently \"npm run backend\" \"npm run frontend\"",
-    "backend": "npm run dev --prefix ecommerce-backend",
-    "frontend": "npm run dev --prefix ecommerce-frontend",
-    "install:all": "npm install --prefix ecommerce-backend && npm install --prefix ecommerce-frontend",
-    "db:seed": "npm run db:seed --prefix ecommerce-backend"
+    "backend": "npm run dev --prefix shopkart-e-commerce-webside-backend",
+    "frontend": "npm run dev --prefix shopkart-e-commerce-webside-frontend",
+    "install:all": "npm install --prefix shopkart-e-commerce-webside-backend && npm install --prefix shopkart-e-commerce-webside-frontend",
+    "db:seed": "npm run db:seed --prefix shopkart-e-commerce-webside-backend"
   },
   "keywords": [],
   "author": "",

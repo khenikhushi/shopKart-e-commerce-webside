@@ -1,12 +1,12 @@
-# ecommerce-frontend
+# shopkart-e-commerce-webside-frontend
 
-Frontend for the ecommerce project (Vite + React).
+Frontend for the shopkart-e-commerce-webside project (Vite + React).
 
 See the consolidated project docs: `../docs/README.md` and `../docs/archive/API_PROFESSIONAL_GUIDE.md` for API reference and usage.
 
 Quick start
 ```bash
-cd ecommerce-frontend
+cd shopkart-e-commerce-webside-frontend
 npm install
 npm run dev
 ```

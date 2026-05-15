@@ -9,12 +9,12 @@ const options = {
   definition: {
     openapi: '3.0.3',
     info: {
-      title: 'Ecommerce Backend API',
+      title: 'ShopKart-e-commerce-webside Backend API',
       version: '1.0.0',
       description: `
-# Ecommerce Backend API Documentation
+# ShopKart-e-commerce-webside Backend API Documentation
 
-Complete REST API documentation for the Ecommerce platform. This API provides endpoints for user authentication, product browsing, cart management, order processing, and administrative operations.
+Complete REST API documentation for the ShopKart-e-commerce-webside platform. This API provides endpoints for user authentication, product browsing, cart management, order processing, and administrative operations.
 
 ## Features
 - **User Authentication**: JWT-based authentication with secure token management
@@ -82,22 +82,22 @@ For API support and issues, please contact the development team.
       `,
       contact: {
         name: 'API Support',
-        email: 'support@ecommerce.com',
-        url: 'https://ecommerce.com/support',
+        email: 'support@shopkart-e-commerce-webside.com',
+        url: 'https://shopkart-e-commerce-webside.com/support',
       },
       license: {
         name: 'MIT',
         url: 'https://opensource.org/licenses/MIT',
       },
-      termsOfService: 'https://ecommerce.com/terms',
+      termsOfService: 'https://shopkart-e-commerce-webside.com/terms',
       'x-logo': {
-        url: 'https://ecommerce.com/logo.png',
-        altText: 'Ecommerce API Logo',
+        url: 'https://shopkart-e-commerce-webside.com/logo.png',
+        altText: 'ShopKart-e-commerce-webside API Logo',
       },
     },
     externalDocs: {
-      description: 'Find more info about Ecommerce API',
-      url: 'https://docs.ecommerce.com',
+      description: 'Find more info about ShopKart-e-commerce-webside API',
+      url: 'https://docs.shopkart-e-commerce-webside.com',
     },
     servers: [
       {
@@ -114,11 +114,11 @@ For API support and issues, please contact the development team.
         },
       },
       {
-        url: 'https://api.ecommerce.com',
+        url: 'https://api.shopkart-e-commerce-webside.com',
         description: 'Production Server',
       },
       {
-        url: 'https://staging-api.ecommerce.com',
+        url: 'https://staging-api.shopkart-e-commerce-webside.com',
         description: 'Staging Server',
       },
     ],

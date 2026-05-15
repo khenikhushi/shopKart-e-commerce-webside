@@ -22,7 +22,7 @@ Key docs
 
 
 How to use
-1. Start the backend (see `ecommerce-backend/README.md`).
+1. Start the backend (see `shopkart-e-commerce-webside-backend/README.md`).
 2. Open Swagger UI: `http://localhost:5000/docs`.
 3. Read `archive/API_PROFESSIONAL_GUIDE.md` for API usage and examples.
 

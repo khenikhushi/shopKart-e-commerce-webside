@@ -1,6 +1,6 @@
 Database: Schema & Migrations
 
-This project uses Sequelize migrations located in `ecommerce-backend/src/migrations`.
+This project uses Sequelize migrations located in `shopkart-e-commerce-webside-backend/src/migrations`.
 
 Available migrations (applied in order):
 
@@ -22,7 +22,7 @@ Running migrations
 Use your npm scripts or Sequelize CLI (if available) to run migrations. Example:
 
 ```bash
-cd ecommerce-backend
+cd shopkart-e-commerce-webside-backend
 npm run db:migrate
 ```
 

@@ -17,7 +17,7 @@ QUICK START - FIXES INSTALLATION
 
 ### 1. Install New Dependencies (Backend)
 ```bash
-cd ecommerce-backend
+cd shopkart-e-commerce-webside-backend
 npm install express-rate-limit@^7.1.5 isomorphic-dompurify@^2.3.0
 npm install
 ```
@@ -37,7 +37,7 @@ BCRYPT_SALT_ROUNDS=12
 # Database
 DB_HOST=localhost
 DB_PORT=3306
-DB_NAME=ecommerce_db
+DB_NAME=shopkart-e-commerce-webside_db
 DB_USER=root
 DB_PASSWORD=your_password
 
@@ -67,7 +67,7 @@ Database connected
 
 ### 4. Test Frontend
 ```bash
-cd ecommerce-frontend
+cd shopkart-e-commerce-webside-frontend
 npm install
 npm run dev
 ```

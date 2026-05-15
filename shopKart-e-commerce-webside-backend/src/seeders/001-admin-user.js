@@ -25,7 +25,7 @@ module.exports = {
   },
 
   async down(queryInterface, Sequelize) {
-    await queryInterface.bulkDelete('users', { email: 'admin@ecommerce.com' }, {});
+    await queryInterface.bulkDelete('users', { email: 'admin@shopkart-e-commerce-webside.com' }, {});
   },
 };
 // field	Value
