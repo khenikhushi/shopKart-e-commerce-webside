@@ -1,0 +1,183 @@
+/* ── Stat Cards ──────────────────────────────────────── */
+.stat-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px 24px;
+  box-shadow: var(--card-shadow);
+  border: none;
+  border-left: 4px solid transparent;
+  transition: transform 0.15s, box-shadow 0.15s;
+  height: 100%;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.stat-card.blue   { border-left-color: #2874f0; }
+.stat-card.green  { border-left-color: #26a541; }
+.stat-card.orange { border-left-color: #ff9f00; }
+.stat-card.purple { border-left-color: #7b2ff7; }
+.stat-card.red    { border-left-color: #ff6161; }
+.stat-card.teal   { border-left-color: #00b8d4; }
+
+.stat-card .stat-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.stat-card .stat-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.stat-card .stat-icon {
+  font-size: 32px;
+  opacity: 0.15;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.stat-card .stat-sub {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+/* ── Dashboard Page ──────────────────────────────────── */
+.page-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.page-subtitle {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.section-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: var(--card-shadow);
+  margin-bottom: 20px;
+}
+
+.section-card-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* ── Tables ──────────────────────────────────────────── */
+.data-table {
+  width: 100%;
+  font-size: 13px;
+}
+
+.data-table th {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  background: #f8f9fa;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.data-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #f0f0f0;
+  color: var(--text-primary);
+  vertical-align: middle;
+}
+
+.data-table tr:last-child td {
+  border-bottom: none;
+}
+
+.data-table tr:hover td {
+  background-color: #fafbff;
+}
+
+/* ── Badges ──────────────────────────────────────────── */
+.status-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.badge-pending       { background: #fff3cd; color: #856404; }
+.badge-confirmed     { background: #cff4fc; color: #055160; }
+.badge-shipped       { background: #cfe2ff; color: #084298; }
+.badge-out_for_delivery { background: #e2d9f3; color: #432874; }
+.badge-delivered     { background: #d1e7dd; color: #0a3622; }
+.badge-cancelled     { background: #f8d7da; color: #842029; }
+.badge-active        { background: #d1e7dd; color: #0a3622; }
+.badge-inactive      { background: #f8d7da; color: #842029; }
+.badge-admin         { background: #cfe2ff; color: #084298; }
+.badge-seller        { background: #fff3cd; color: #856404; }
+.badge-user          { background: #e2d9f3; color: #432874; }
+
+/* ── Action Buttons ──────────────────────────────────── */
+.action-btn {
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  background: white;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.action-btn:hover {
+  background: #f0f4ff;
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.action-btn.danger:hover {
+  background: #fff0f0;
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+/* ── Mobile sidebar toggle ───────────────────────────── */
+.sidebar-toggle-btn {
+  display: none;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 991px) {
+  .sidebar-toggle-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+}
