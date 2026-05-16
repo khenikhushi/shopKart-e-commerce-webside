@@ -477,7 +477,7 @@ const ProductDetailPage = () => {
                     </div>
                   )}
 
-                  {product.filters?.length > 0 && (
+                  {/* {product.filters?.length > 0 && (
                     <div style={{ marginTop: 20 }}>
                       <div
                         style={{
@@ -499,7 +499,7 @@ const ProductDetailPage = () => {
                         )}
                       </div>
                     </div>
-                  )}
+                  )} */}
 
                   <div
                     style={{
